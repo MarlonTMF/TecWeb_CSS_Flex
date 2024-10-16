@@ -6,9 +6,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .contenedor-flexible{
+        .contenedor-flexible-1{
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: row;
+            /*space between - distribuye los elementos de forma equitativa respecto a espacio
+            space-around - 
+            */
+            justify-content: space-around; 
+        }
+        .contenedor-flexible-2{
+            
+            display: flex;
+            flex-direction: row;
+            /*ajusto el contenido en base al texto o en base al tamanio de las cajas*/
+            justify-content: flex-start; 
+            align-items: center;
+        }
+        .contenedor-flexible-3{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start; 
+            align-items: center;
+            flex-wrap: wrap-reverse;
         }
 
         .uno{
@@ -38,14 +58,90 @@
             color: white;
 
         }
+        .uno_2{
+            background-color: red;
+            width: 150px;
+            height: 200px;
+            color: white;
+        }
+        .dos_2{
+            background-color: orange;
+            width: 150px;
+            height: 70px;
+            color: white;
+
+        }
+        .tres_2{
+            background-color: violet;
+            width: 150px;
+            height: 100px;
+            color: white;
+
+        }
+        .cuatro_2{
+            background-color: purple;
+            width: 150px;
+            height: 150px;
+            color: white;
+
+        }
+
+        .uno_3 , .cinco_3{
+            background-color: red;
+            width: 150px;
+            height: 200px;
+            color: white;
+        }
+        .dos_3, .seis_3{
+            background-color: orange;
+            width: 150px;
+            height: 70px;
+            color: white;
+
+        }
+        .tres_3, .siete_3{
+            background-color: violet;
+            width: 150px;
+            height: 100px;
+            color: white;
+
+        }
+        .cuatro_3{
+            background-color: purple;
+            width: 150px;
+            height: 150px;
+            color: white;
+
+        }
+
     </style>
 </head>
 <body>
-    <div class="contenedor-flexible">
+    <div class="contenedor-flexible-1">
         <div class="elemento-flexible uno">Elemento 1</div>
         <div class="elemento-flexible dos">Elemento 2</div>
         <div class="elemento-flexible tres">Elemento 3</div>
         <div class="elemento-flexible cuatro">Elemento 4</div>
+    </div>
+    <br>
+
+    <div class="contenedor-flexible-2">
+        <div class="elemento-flexible uno_2">Elemento 1</div>
+        <div class="elemento-flexible dos_2">Elemento 2</div>
+        <div class="elemento-flexible tres_2">Elemento 3</div>
+        <div class="elemento-flexible cuatro_2">Elemento 4</div>
+    </div>
+
+    <br>
+
+    <div class="contenedor-flexible-3">
+        <div class="elemento-flexible uno_3">Elemento 1</div>
+        <div class="elemento-flexible dos_3">Elemento 2</div>
+        <div class="elemento-flexible tres_3">Elemento 3</div>
+        <div class="elemento-flexible cuatro_3">Elemento 4</div>
+        <div class="elemento-flexible cinco_3">Elemento 5</div>
+        <div class="elemento-flexible seis_3">Elemento 6</div>
+        <div class="elemento-flexible siete_3">Elemento 7</div>
 
     </div>
     
